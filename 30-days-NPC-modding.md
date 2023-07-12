@@ -47,6 +47,7 @@ Similar idea to Ingen's fetch quest.
 - Write dialogue for scene
 - Generate dialogue lines needed for these interractions
 - Implement dialogue in CK
+
 On player's return
 - Increment relationship ranking - 3
 - Increment player's enchanting skill
