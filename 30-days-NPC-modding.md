@@ -20,7 +20,8 @@ Ideally he will have AI package so that he travels to CoW Library where he can b
 I would like to add some sort of randomness to his evening routine so sometimes he will be at the tavern and sometimes in his house in the evenings.  Usually he will be reading, 
 wherever he is.  Or writing, if that's possible???  
 ?? What else is posible with AI packages?  
-- Add AI packages - not yet aware of tutorials for this
+- Add AI packages [Darkfox127 AI Packages Tutorial](https://youtu.be/E3Nd8LXYRA0) and [Creation Kit Wiki](https://www.creationkit.com/index.php?title=Category:Packages)
+
 
 ## Introduction quest
 Location will be CoW Library.  
