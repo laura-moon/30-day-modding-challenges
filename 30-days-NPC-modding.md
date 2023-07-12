@@ -8,8 +8,8 @@ I am not intending to publish this.  I do not need to appeal to anyone other tha
 ## Create NPC
 NPC is male Breton called Gwilym.  He is a mage who specialises in enchanting.  He is informally associated with the College of Winterhold.
 He will use Young Male Eager voice type.  
-- create NPC /(JR tutorial/)
-- create appearance in Racemenu and add to plugin /(Van's YT video on NPC replacer,  LLewellyn's PDF tutorial on same/)
+- create NPC - follow JR tutorial
+- create appearance in Racemenu and add to plugin - follow Van's YT video on NPC replacer and LLewellyn's PDF tutorial on same
 
 ## Give Gwilym a house
 He lives in Quaint Shelter, just outside Winterhold.  
