@@ -26,10 +26,10 @@ wherever he is.  Or writing, if that's possible???
 Location will be CoW Library.  
 Player will approach Gwilym.  Not yet written dialogue.  
 - Write dialogue for scene
-- Increment player/Gwilym relationship - 1
 - Train AI on Young Male Eager voicetype
 - Generate dialogue lines needed for these interractions
 - Implement dialogue in CK
+- Increment player/Gwilym relationship - 1
 
 Result will be fetch quest to find a book about enchantment that a careless student lost some time previously.  
 - Create book for fetch quest and place in world somewhere
@@ -62,9 +62,12 @@ Reluctantly he asks for help collecting soul gems that have strong elemental ass
 - Implement dialogue in CK
 - Create special soul gems
 - Place in world, with quest markers
+
 On player's return
 - Increment relationship ranking - 4 (Lover)
+
 Opens up potential integration with Young Lovers mod.
+
 ??? How does vanilla marriage work - do I need to do anything or is it automatically an option once relationship reaches 4?
 
 
