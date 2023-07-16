@@ -25,7 +25,8 @@ Fixed appearance, again.
 Reclipped audio files (I had incorrectly exported all the files I did yesterday, exporting the whole file rather than the selection).  
 Attached audio files for the dialogue lines I added yesterday and generated lip files.  
 Tested in game, all working as expected.  
-Clip more dialogue lines for greeting, in preparation for next Joseph Russell tutorial.
+Clipped more dialogue lines for greeting, in preparation for next Joseph Russell tutorial.
+Discovered that I've cut all the dialogue lines to short so I'm going to have to do them all again. 
 
 **Next:**
 Follow Joseph Russell tutorial #4 - [Saying Hello](https://www.youtube.com/watch?v=ycX2QWI08ls)  
