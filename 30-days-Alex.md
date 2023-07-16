@@ -8,7 +8,8 @@ Finished NPC record using YoungMaleEager voicetype.
 Attempted to update appearance to the one I created.   
 Could not resolve dark face bug - try again tomorrow.  
 Also I think I am going to do custom voice type rather than use YoungMaleEager voicetype.  
-Added Quaint Shelter as a master and gave Gwilym ownership of it.
+Added Quaint Shelter as a master and gave Gwilym ownership of it.  
+Generated a load of audio with ElevenLabs.
 
 ### Day 3
 Restarted entirely.  NPC is Alex, he just won't be called anything else.  This is just for me, save Gwilym for if I ever make a mod to be released publicly.  
@@ -23,7 +24,8 @@ Merged appearance records into main plugin rather than as separate overwriting p
 Fixed appearance, again.  
 Reclipped audio files (I had incorrectly exported all the files I did yesterday, exporting the whole file rather than the selection).  
 Attached audio files for the dialogue lines I added yesterday and generated lip files.  
-Tested in game, all working as expected.
+Tested in game, all working as expected.  
+Clip more dialogue lines for greeting, in preparation for next Joseph Russell tutorial.
 
 **Next:**
 Follow Joseph Russell tutorial #4 - [Saying Hello](https://www.youtube.com/watch?v=ycX2QWI08ls)  
