@@ -27,8 +27,28 @@ Attached audio files for the dialogue lines I added yesterday and generated lip 
 Tested in game, all working as expected.  
 Clipped more dialogue lines for greeting, in preparation for next Joseph Russell tutorial.
 Discovered that I've cut all the dialogue lines to short so I'm going to have to do them all again. 
+Started messing around with AI packages using [this tutorial by Darkfox127](https://www.youtube.com/watch?v=E3Nd8LXYRA0&t=900s) and (the Creation Kit wiki)[https://www.creationkit.com/index.php?title=Category:Packages#Package_Templates]
+Plan - travel package to College, sandbox package for College Arcanaeum, travel package to Frozen Hearth, sandbox packaged at Tavern, travel package to Quaint Shelter (his home), sleep package at Quaint Shelter, default sandbox package at Quaint Shelter.
+I initially thought that he got stuck at the College gate which is locked prior to the player joining the quest, but in fact his travel package, which I had set to 2 hours, ran out just inside the gate.  I ammended it so it was 4 hours which got him to the College but he just stood there, just inside the door, until the travel package expired.
+When the sandbox package kicks in, he doesn't do the idles I set in the Package, he just bounces around from chair to chair.  Sometimes it looks like he's starting the animation, but it only lasts for a second or so then he stops.  Not sure what's causing that or how to resolve it.
+Also, the gate is still an issue because when he leaves the Arcanaeum to go to the tavern he gets stuck there.
+I resolved this by using player.setstage MG01 30 to open the gate.  He did then go to the tavern, but he entered by walking through a wall, and then he stood doing nothing for hours and was not able to leave.  
+My plan is to set conditions on the AI packages so he only goes to the College after the player joins, to avoid this issue, but I want to make sure the packages work before implementing that condition and creating new packages for him to use prior to that happening.
+I also changed the setting for the Arcanaeum sandbox so that he wasn't allowed to sit down... that did make him more likely to play the idle animations but I feel a bit bad about it lol.
+
+### Day 5
+Bad day.  I messed with his AI packages and things got even worse.  I changed the travel packages to travelandplayidles but that didn't seem to make any difference.  He didn't leave the pub.  He just stood in a corner for hours looking like he was attempting to do the idles and not doing the idles.  I got very disheartened at this point but very kind supportive words from the mod makers of the Kaidan EE Discord server perked me up again. 
+
+### Day 6
+I intended to take a little break from Alex but woke up motivated to try again, so I did.  I added xmarkers to the Arcaneaum and the Frozen Hearth and directed his travel package to them instead.  I think I need to change the radius (I left it at 0 to see what that would do) because when he got there he just stayed on the marker for the duration of the travel package, which was not my intention.  But, I did have success in that he actually used some of his idles in the Frozen Hearth, after his travel package expired.  Also, some weird stuff was happening and I'm not sure if that's due to my not having saved the game (just coc from the main menu) so I'm going to create a clean save without him installed, and add him to that each time I make changes.  For example, he did not leave the Frozen Hearth at 10pm like he's supposed to.  I the saved the game for the first time and reloaded, and he had disappeared from the Frozen Hearth and was at Quaint Shelter when I went there.  So I'm not sure what would have happened if I had saved the game earlier.  I will test that out later.  Also he was using the idle markers that are placed at Quaint Shelter perfectly, so I want to try adding those in and removing the idles from his AI package to see if that works better. 
+ He did not go to sleep.  Try specifying the bed in his AI package.   
+
+Next steps:
+- Shorten travel package to Frozen Hearth to 2 hours.
+- Install the College overhaul I will be using and see what idle markers there are.  Experiment with adding new ones that belong to Alex.  Remove the idle markers from his AI package.
+- If that works, do the same at the Frozen Hearth (install Winterhold Restored first).  
+- Try specifying the bed at Quaint Shelter in his sleep package.
 
 **Next:**
 Follow Joseph Russell tutorial #4 - [Saying Hello](https://www.youtube.com/watch?v=ycX2QWI08ls)  
-Work on AI packages.  
 Work on meeting scene.
