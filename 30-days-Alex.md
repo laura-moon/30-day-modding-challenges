@@ -43,12 +43,13 @@ Bad day.  I messed with his AI packages and things got even worse.  I changed th
 I intended to take a little break from Alex but woke up motivated to try again, so I did.  I added xmarkers to the Arcaneaum and the Frozen Hearth and directed his travel package to them instead.  I think I need to change the radius (I left it at 0 to see what that would do) because when he got there he just stayed on the marker for the duration of the travel package, which was not my intention.  But, I did have success in that he actually used some of his idles in the Frozen Hearth, after his travel package expired.  Also, some weird stuff was happening and I'm not sure if that's due to my not having saved the game (just coc from the main menu) so I'm going to create a clean save without him installed, and add him to that each time I make changes.  For example, he did not leave the Frozen Hearth at 10pm like he's supposed to.  I the saved the game for the first time and reloaded, and he had disappeared from the Frozen Hearth and was at Quaint Shelter when I went there.  So I'm not sure what would have happened if I had saved the game earlier.  I will test that out later.  Also he was using the idle markers that are placed at Quaint Shelter perfectly, so I want to try adding those in and removing the idles from his AI package to see if that works better. 
  He did not go to sleep.  Try specifying the bed in his AI package.   
 
-Next steps:
-- Shorten travel package to Frozen Hearth to 2 hours.
-- Install the College overhaul I will be using and see what idle markers there are.  Experiment with adding new ones that belong to Alex.  Remove the idle markers from his AI package.
-- If that works, do the same at the Frozen Hearth (install Winterhold Restored first).  
-- Try specifying the bed at Quaint Shelter in his sleep package.
+### Day 7
+More tweaking of his AI Packages.  At the Arcanauem, I added a couple of idle markers and removed all the idles from his AI package as they weren't working properly.  I also changed ownership of one of the chairs so it belongs to Alex, hoping this would make him prefer this one and stop bouncing around all day, but it did not.  Changed radius of xmarker to 250 to see if this would help with him standing stationary when he arrives.  It did not.
+Shortened travel time to Frozen Hearth so there would be less time standing still on the xmarker.  This did not work.  
+Changed the sleep package so it targets the bed specifically rather than all beds in the cell (there is only one though) - this did not work.  The man will not sleep.
+I didn't remove the idles from the Frozen Hearth sandboxing package and these seem to work, I'm not sure why they work here and nowhere else.
 
-**Next:**
-Follow Joseph Russell tutorial #4 - [Saying Hello](https://www.youtube.com/watch?v=ycX2QWI08ls)  
-Work on meeting scene.
+Next steps:
+- Move on to reclipping audio, and adding in those lines (follow Joseph Russell tutorial #4 - [Saying Hello](https://www.youtube.com/watch?v=ycX2QWI08ls))  
+- Write dialogue for introduction scene and create that [using this video](https://discord.com/channels/959790733336936508/963797617127591976/1130256657344114699)
+- Watch [this video on AI packages](https://www.youtube.com/watch?v=A4T7iNO5YKg&list=WL&index=1&t=1s)
