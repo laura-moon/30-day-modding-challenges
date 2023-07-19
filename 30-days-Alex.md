@@ -44,12 +44,14 @@ I intended to take a little break from Alex but woke up motivated to try again, 
  He did not go to sleep.  Try specifying the bed in his AI package.   
 
 ### Day 7
-More tweaking of his AI Packages.  At the Arcanauem, I added a couple of idle markers and removed all the idles from his AI package as they weren't working properly.  I also changed ownership of one of the chairs so it belongs to Alex, hoping this would make him prefer this one and stop bouncing around all day, but it did not.  Changed radius of xmarker to 250 to see if this would help with him standing stationary when he arrives.  It did not.
+More tweaking of his AI Packages.  At the Arcanauem, I added a couple of idle markers and removed all the idles from his AI package as they weren't working properly.  I also changed ownership of one of the chairs so it belongs to Alex, hoping this would make him prefer this one and stop bouncing around all day, but it did not.  Changed radius of xmarker to 250 to see if this would help with him standing stationary when he arrives.  It did not.  
 Shortened travel time to Frozen Hearth so there would be less time standing still on the xmarker.  This did not work.  
-Changed the sleep package so it targets the bed specifically rather than all beds in the cell (there is only one though) - this did not work.  The man will not sleep.
+Changed the sleep package so it targets the bed specifically rather than all beds in the cell (there is only one though) - this did not work.  The man will not sleep.  
 I didn't remove the idles from the Frozen Hearth sandboxing package and these seem to work, I'm not sure why they work here and nowhere else.
 
 Next steps:
 - Move on to reclipping audio, and adding in those lines (follow Joseph Russell tutorial #4 - [Saying Hello](https://www.youtube.com/watch?v=ycX2QWI08ls))  
 - Write dialogue for introduction scene and create that [using this video](https://discord.com/channels/959790733336936508/963797617127591976/1130256657344114699)
 - Watch [this video on AI packages](https://www.youtube.com/watch?v=A4T7iNO5YKg&list=WL&index=1&t=1s)
+- Add conditions so his College travel and sandboxing packages don't fire until after MQ01 stage 30
+- Add in replacement AI packages to keep him busy in the meantim
