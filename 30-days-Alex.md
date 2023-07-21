@@ -49,9 +49,17 @@ Shortened travel time to Frozen Hearth so there would be less time standing stil
 Changed the sleep package so it targets the bed specifically rather than all beds in the cell (there is only one though) - this did not work.  The man will not sleep.  
 I didn't remove the idles from the Frozen Hearth sandboxing package and these seem to work, I'm not sure why they work here and nowhere else.
 
+### Day 8
+Generated some more audio and wrote script for introductory scene.
+
+### Day 9
+Reclipped audio for CFF using [this guide](https://wiki.beyondskyrim.org/wiki/Arcane_University:Voice_Line_Implementation) - added to Data folder and regenerated lip files.
+Generated audio for introductory scene.
+
 Next steps:
-- Move on to reclipping audio, and adding in those lines (follow Joseph Russell tutorial #4 - [Saying Hello](https://www.youtube.com/watch?v=ycX2QWI08ls))  
-- Write dialogue for introduction scene and create that [using this video](https://discord.com/channels/959790733336936508/963797617127591976/1130256657344114699)
+- Generate, clip and add in greeting lines (follow Joseph Russell tutorial #4 - [Saying Hello](https://www.youtube.com/watch?v=ycX2QWI08ls))  
+- Implement introductory scene [using this video](https://discord.com/channels/959790733336936508/963797617127591976/1130256657344114699)
+- Refine appearance
 - Watch [this video on AI packages](https://www.youtube.com/watch?v=A4T7iNO5YKg&list=WL&index=1&t=1s)
 - Add conditions so his College travel and sandboxing packages don't fire until after MQ01 stage 30
 - Add in replacement AI packages to keep him busy in the meantim
