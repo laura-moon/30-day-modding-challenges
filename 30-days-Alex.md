@@ -58,8 +58,34 @@ Generated audio for introductory scene.
 
 Next steps:
 - Generate, clip and add in greeting lines (follow Joseph Russell tutorial #4 - [Saying Hello](https://www.youtube.com/watch?v=ycX2QWI08ls))  
-- Implement introductory scene [using this video](https://discord.com/channels/959790733336936508/963797617127591976/1130256657344114699)
+- Implement introductory scene [using this video](https://www.youtube.com/watch?v=iFDZjhVxaSg)
 - Refine appearance
 - Watch [this video on AI packages](https://www.youtube.com/watch?v=A4T7iNO5YKg&list=WL&index=1&t=1s)
 - Add conditions so his College travel and sandboxing packages don't fire until after MQ01 stage 30
-- Add in replacement AI packages to keep him busy in the meantim
+- Add in replacement AI packages to keep him busy in the meantime
+
+## Reboot
+I ended up taking a break from working on Alex.  I did pick things up again, but forgot about updating this log for a while.  I'm piecing this together from my commit history.
+
+I followed the introductory scene tutorial.
+I'm waiting for Elevenlabs to release their STS but used temporary lines to get everything working.
+
+### Reboot Day 1
+I followed JR's tutorial to get greeting lines added.
+
+### Reboot Day 2
+I started implementing the fetch quest.  Created tome of enchantment and added it to Geirmund's Hall - I was trying to avoid dungeons that are associated with either the Main Quest or the Faction Quests, and this is a nice location.  I placed it somewhere that the player could just grab it and go, but if they did want to explore further, they could end up starting a cool quest.  I used [this video](https://youtu.be/G6QbxZSgyxA) for creating the book, especially how to add the cool illuminated letters. 
+
+### Reboot Day 3
+I went through and found the best of the lines I had generated that could be used as temporary audio for the introductory quest.  I also recorded myself saying the lines - I will use these tracks to generate the actual lines once the STS feature is launched.
+
+### Reboot Day 4
+I added all the dialogue for the initial conversation, and scripted to progress the quest onto stage 10 - I followed [this video](https://youtu.be/iFDZjhVxaSg) and started adding scripting to progress the quest stages through dialogue.
+
+### Reboot Day 5
+I used [this tutorial](https://www.creationkit.com/index.php?title=Bethesda_Tutorial_Basic_Quest_Scripting) to add a script to the book so that when the player adds the book to their inventory, the quest stage is progressed and the new quest objective is displayed.  This took a lot of time to get working and I'm still not sure what I was doing wrong.  In the end I got it working through using the code from [this page](https://falloutck.uesp.net/wiki/OnContainerChanged_-_ObjectReference) instead.  The only difference I can see is that the second one uses akNewContainer and akOldContainer rather than newContainer and oldContainer.  I don't know enought to tell if this could make a difference or not, but whatever, it's working now.  I also changed the Follower Quest so that will not start until the Introduction Quest is completed - I've not checked that this works yet as I still have to implement the final part of the fetch quest, which will complete that quest.
+
+### Reboot Day 6
+So far my intro quest has been set to Start Game Enabled, and I used [this tutorial]() to generate a seq file.  I have seen a few people say that it's not best practice to have these sorts of quests as start game enabled and in any case there is no need for this one to be, as there's no way that you can talk to Alex until you visit Winterhold.  My initial thought is to set it so that entering the Arcanaeum will trigger it, but that would force you to do either CoW or Main Quest... but then the whole thing is that you're in the Library looking for a book, so I suppose that is okay.  If I did go on to reworkd the mod to release I would probably completely change the introductory quest in any case.  I can think about that later.  For now I will use [this tutorial](https://www.creationkit.com/index.php?title=Bethesda_Tutorial_Story_Manager) to change the trigger for the quest to be Change Location Event with the player entering the Arcanaeum.  Seems to work, but now my quest and map marker for retrieving the book aren't working... Take a break and try to fix that before moving on.
+
+I also need to finish the dialogue for the fetch quest - I haven't implemented the lines for when you return the book to Alex, and I need to think about how to handle him teaching you new enchanting techniques.  I'm thinking maybe a fade to black then after that the player's enchanting skill gets incremented. 
