@@ -87,7 +87,16 @@ I used [this tutorial](https://www.creationkit.com/index.php?title=Bethesda_Tuto
 
 ### Reboot Day 6
 So far my intro quest has been set to Start Game Enabled, and I used [this tutorial]() to generate a seq file.  I have seen a few people say that it's not best practice to have these sorts of quests as start game enabled and in any case there is no need for this one to be, as there's no way that you can talk to Alex until you visit Winterhold.  My initial thought is to set it so that entering the Arcanaeum will trigger it, but that would force you to do either CoW or Main Quest... but then the whole thing is that you're in the Library looking for a book, so I suppose that is okay.  If I did go on to reworkd the mod to release I would probably completely change the introductory quest in any case.  I can think about that later.  For now I will use [this tutorial](https://www.creationkit.com/index.php?title=Bethesda_Tutorial_Story_Manager) to change the trigger for the quest to be Change Location Event with the player entering the Arcanaeum.  
-Okay, so the tutorial linked above uses a scripted event to trigger the scene and I decided to go for a simpler change location event.  I couldn't find mucj info on how to do this, the onlu tutorial I could find was [for Fallout 4](https://youtu.be/DlMYJ-QcyiQ) but it seems to work.  
+Okay, so the tutorial linked above uses a scripted event to trigger the scene and I decided to go for a simpler change location event.  I couldn't find mucj info on how to do this, the only tutorial I could find was [for Fallout 4](https://youtu.be/DlMYJ-QcyiQ) but it seems to work.  
 The only thing is that now my quest and map marker for retrieving the book aren't working... Take a break and try to fix that before moving on.
 
 I also need to finish the dialogue for the fetch quest - I haven't implemented the lines for when you return the book to Alex, and I need to think about how to handle him teaching you new enchanting techniques.  I'm thinking maybe a fade to black then after that the player's enchanting skill gets incremented. 
+
+### Reboot Day 7
+I finished the dialogue for the fetch quest with temporary dialogue - I'm waiting for ElevenLabs to release their Speech to Speech conversion before I generate any more lines.  I also made a patch that hooks into ostim's kissing animations, triggered by dialogue.  I used the instructions from [this mod](https://www.nexusmods.com/skyrimspecialedition/mods/97073) 
+
+### Reboot Day 8
+Got back on the AI horse.  Started simple with vanilla eat, sleep and sandbox packages, following [this tutorial](https://www.creationkit.com/index.php?title=Bethesda_Tutorial_Packages).  He still didn't sleep.
+
+### Reboot Day 9
+Messed around with his AI packages again and realised that ownership of the bed in the house was set to player bed faction. I changed the ownership to Alex and he went straight to sleep at the start of his sleep package!
